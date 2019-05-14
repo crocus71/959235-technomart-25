@@ -3,23 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
+  <base href="https://htmlacademy-htmlcss.github.io/959235-technomart-25/2/">
 </head>
 <body>
   <header class="main-header">
-    <nav class="site-menu">
+    <div class="site-menu">
       <a class="main-header logo">
-        <img src="http://placehold.it/150x50" alt='Логотип "Техномарт"'>
+        <img src="http://placehold.it" width="150" height="50" alt='Логотип "Техномарт"'>
       </a>
       <ul class="menu">
-        <li><a href="#">Поиск</a></li>
+        <li><!--поле формы-->Поиск</li>
         <li><a href="#">Закладки</a></li>
         <li><a href="#">Корзина</a></li>
         <li><a href="">Оформить</a></li>
       </ul>
-    </nav>
-    <div class="main-header aaa">
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     </div>
+    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <div class="main-header adress">
       <a class="tel" href="#">+7-(812)-555-05-55</a>
       <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
@@ -43,47 +42,49 @@
   </header>
   <main>
     <section class="main-about">
-      <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
-        <ul class="footer-partners">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-          <a class="btn" href="#">Подробнее о компании</a>
-      </section>
-      <section class="main-contacts">
-        <h2>КОНТАКТЫ</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:
-            <a href="#"></a>
-          </p>
-          <a class="btn" href="">Как нас найти</a>
-      </section>
+	  <h2 class="visually-hidden">О компании</h2>
+		<h3>КОМПАНИЯ "ТЕХНОМАРТ"</h3>
+			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+			<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
+			<ul class="footer-partners">
+				<li>Деловые линии</li>
+				<li>Автотрейдинг</li>
+				<li>ЖелДорЭкспедиция</li>
+			</ul>
+			<a class="btn" href="#">Подробнее о компании</a>
+		<h3>КОНТАКТЫ</h3>
+			<p>Вы можете забрать товар сами, заехав в наш офис:
+				<!--карта-->
+			</p>
+			<a class="btn" href="">Заблудились? Напишите нам!</a>
+     </section>
   </main>
   <footer class="main-footer">
     <nav class="footer-navigation">
       <a class="main-footer logo">
-        <img src="http://placehold.it/150x50" alt='Логотип "Техномарт"'>
+        <img src="http://placehold.it" width="150" height="50" alt='Логотип "Техномарт"'>
       </a>
-      <ul class="footer-navigation item">
+	  <ul class="footer-navigation item">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="footer-goods item">
         <li><a href="#">Материалы</a></li>
         <li><a href="#">Техника</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a href="#">Спецпредложения</a></li>
-      </ul>
+     </ul>
     </nav>
-      <div class="footer-copyright">
-        &copy; 2010-2017 Компания "Техномарт"<br>
-        Все права защищены
-      </div>
+    <section class="footer-info">
+	    <p class="footer-adress">
+			<span>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
+			<span>+7-(812)-555-05-55</span>
+	   </p>
+	    <p class="footer-copyright">
+        <span>&copy; 2010-2017 Компания "Техномарт"</span>
+        <span>Все права защищены</span>
+      </p>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">ВКонтакте</a></li>
@@ -99,5 +100,7 @@
         Разработано:
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
+	 </section>
   </footer>
 </body>
+</html>
