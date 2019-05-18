@@ -12,7 +12,7 @@
         <img src="img/logo-header.png" width="220" height="47" alt='Логотип "Техномарт"'>
       </a>
       <ul class="menu">
-        <li><!--поле формы-->Поиск</li>
+        <li><input type="text" name="search" placeholder="Поиск"></li>
         <li><a href="#">Закладки</a></li>
         <li><a href="#">Корзина</a></li>
         <li><a href="">Оформить</a></li>
@@ -20,11 +20,12 @@
     </div>
     <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <div class="main-header address">
-      <a class="tel" href="#">+7-(812)-555-05-55</a>
+      <p class="phone">+7-(812)-555-05-55</p>
       <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
     </div>
     <ul class="main-header login">
       <li class="button">
+
         <a href="#">Войти</a>
       </li>
       <li class="button">
@@ -63,15 +64,15 @@
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
 		    <a class="btn" href="#">Подробнее о компании</a>
-		</div>
-		<div class="contacts">
+		  </div>
+		  <div class="contacts">
 		  <h3>КОНТАКТЫ</h3>
-			<p>Вы можете забрать товар сами, заехав в наш офис:
-				<!--карта-->
-			</p>
-			<a class="btn" href="">Заблудились? Напишите нам!</a>
-		</div>
-     </section>
+			  <p>Вы можете забрать товар сами, заехав в наш офис:
+				  <img src="img/map-small.png" width="300" height="158" alt="г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8">
+			  </p>
+      <a class="btn" href="">Заблудились? Напишите нам!</a>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <nav class="footer-navigation">
@@ -114,7 +115,22 @@
         <p>Разработано:</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
-	</section>
+	  </section>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Напишите нам</h2>
+        <label for="user-login">Ваше имя:</label>
+          <input type="text" id="user-login" name="name" placeholder="Имя Фамилия">
+        <label for="user-email">Ваш e-mail:</label>
+          <input type="email" id="user-email" name="email" placeholder="email@example.com">
+        <label for="user-message">Текст письма:</label>
+          <input type="text" id="user-message" placeholder="В свободной форме">
+        <span class="modal-close">x</span>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close">x</span>
+    </section>
+
   </footer>
 </body>
 </html>
