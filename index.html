@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
-  <base href="https://htmlacademy-htmlcss.github.io/959235-technomart-25/3/">
+  <base href="https://htmlacademy-htmlcss.github.io/959235-technomart-25/4/">
 </head>
 <body>
   <header class="main-header">
@@ -11,8 +11,10 @@
       <a class="main-header logo">
         <img src="img/logo-header.png" width="220" height="47" alt='Логотип "Техномарт"'>
       </a>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="search" placeholder="Поиск">
+      </form>
       <ul class="menu">
-        <li><input type="text" name="search" placeholder="Поиск"></li>
         <li><a href="#">Закладки</a></li>
         <li><a href="#">Корзина</a></li>
         <li><a href="">Оформить</a></li>
@@ -25,7 +27,6 @@
     </div>
     <ul class="main-header login">
       <li class="button">
-
         <a href="#">Войти</a>
       </li>
       <li class="button">
@@ -43,7 +44,6 @@
         <li><a href="#">Каталог</a></li>
       </ul>
     </nav>
-
   </header>
   <main>
     <section class="main-about">
@@ -67,9 +67,10 @@
 		  </div>
 		  <div class="contacts">
 		  <h3>КОНТАКТЫ</h3>
-			  <p>Вы можете забрать товар сами, заехав в наш офис:
-				  <img src="img/map-small.png" width="300" height="158" alt="г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8">
-			  </p>
+			  <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <img alt="г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8" height="158" src="img/map-small.png"
+                                       width="300">
+
       <a class="btn" href="">Заблудились? Напишите нам!</a>
       </div>
     </section>
@@ -116,21 +117,27 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
 	  </section>
-    <section class="modal modal-feedback">
-      <h2 class="visually-hidden">Напишите нам</h2>
-        <label for="user-login">Ваше имя:</label>
-          <input type="text" id="user-login" name="name" placeholder="Имя Фамилия">
-        <label for="user-email">Ваш e-mail:</label>
-          <input type="email" id="user-email" name="email" placeholder="email@example.com">
-        <label for="user-message">Текст письма:</label>
-          <input type="text" id="user-message" placeholder="В свободной форме">
-        <span class="modal-close">x</span>
-    </section>
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
-    </section>
 
   </footer>
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form class= "feedback-action" action="https://echo.htmlacademy.ru" method="post">
+      <label for="user-login">Ваше имя:</label>
+        <input type="text" id="user-login" name="name" placeholder="Имя Фамилия">
+      <label for="user-email">Ваш e-mail:</label>
+        <input type="email" id="user-email" name="email" placeholder="email@example.com">
+      <label for="user-message">Текст письма:</label>
+        <textarea name="user-message" id="user-message">В свободной форме</textarea>
+      <input type="submit" value="Отправить">
+      <span class="modal-close">x</span>
+    </form>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map-big.jpg" alt="г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8">
+      <span class="modal-close">x</span>
+
+  </section>
 </body>
 </html>
