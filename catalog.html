@@ -47,16 +47,37 @@
   </header>
   <main>
     <ul class="breadcrumbs">
-      <li><a href="index.html">
-
-          </a></li>
+      <li><a href="index.html"></a></li>
       <li><a href="#">Каталог</a></li>
       <li><a href="#">Инструмент</a></li>
       <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!--форма-->
+      <form class="check-item" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Производители</legend>
+            <label for="bosch">BOSCH</label>
+              <input type="checkbox" id="bosch" checked>
+            <label for="interskol">Интерскол</label>
+              <input type="checkbox" id="interskol">
+            <label for="makita">Makita</label>
+              <input type="checkbox" id="makita" checked>
+            <label for="dewalt">Dewalt</label>
+              <input type="checkbox" id="dewalt">
+            <label for="hitachi">Hitachi</label>
+              <input type="checkbox" id="hitachi">
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
+            <label for="battery">Аккумуляторные</label>
+              <input type="radio" id="battery" checked>
+            <label for="electric-grid">Сетевые</label>
+              <input type="radio" id="electric-grid">
+        </fieldset>
+        <input type="submit" value="Показать">
+
+      </form>
 
     </section>
     <section class="catalog">
