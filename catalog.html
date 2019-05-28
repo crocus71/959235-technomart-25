@@ -23,15 +23,20 @@
       <p class="phone">+7-(812)-555-05-55</p>
       <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
     </div>
-    <ul class="main-header login">
-      <!--поле формы-->
-      <li class="button">
-        <a href="#">Мои заказы</a>
-      </li>
-      <li class="button">
-        <a href="#">Личный кабинет</a>
-      </li>
-    </ul>
+    <div class="main-header username">
+      <!--div>
+
+      </div-->
+      <ul>
+        <li class="button">
+          <a href="#">Мои заказы</a>
+        </li>
+        <li class="button">
+          <a href="#">Личный кабинет</a>
+        </li>
+      </ul>
+
+    </div>
     <nav class="header-navigation">
       <ul class="header-navigation item">
         <li><a href="#">Главная</a></li>
@@ -57,23 +62,31 @@
       <form class="check-item" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Производители</legend>
-            <label for="bosch">BOSCH</label>
-              <input type="checkbox" id="bosch" checked>
-            <label for="interskol">Интерскол</label>
-              <input type="checkbox" id="interskol">
-            <label for="makita">Makita</label>
-              <input type="checkbox" id="makita" checked>
-            <label for="dewalt">Dewalt</label>
-              <input type="checkbox" id="dewalt">
-            <label for="hitachi">Hitachi</label>
-              <input type="checkbox" id="hitachi">
+            <label>
+              <input type="checkbox" name="brand" id="bosch" value="BOSCH" checked>BOSCH
+            </label>
+            <label>
+              <input type="checkbox" name="brand" id="interskol" value="Интерскол">Интерскол
+            </label>
+            <label>
+              <input type="checkbox" name="brand" id="makita" value="Makita" checked>Makita
+              </label>
+            <label>
+              <input type="checkbox" name="brand" id="dewalt" value="Dewalt">Dewalt
+            </label>
+            <label>
+              <input type="checkbox" name="brand" id="hitachi" value="Hitachi">Hitachi
+            </label>
         </fieldset>
         <fieldset>
           <legend>Питание</legend>
-            <label for="battery">Аккумуляторные</label>
-              <input type="radio" id="battery" checked>
-            <label for="electric-grid">Сетевые</label>
-              <input type="radio" id="electric-grid">
+            <label>
+              <input type="radio" name="type" id="battery" value="battery" checked>Аккумуляторные
+            </label>
+
+            <label>
+              <input type="radio" name="type" id="electric-grid" value="electric-grid">Сетевые
+            </label>
         </fieldset>
         <input type="submit" value="Показать">
 
@@ -221,7 +234,8 @@
 	 </section>
   </footer>
   <section class="modal modal-cart">
-    <h3>Tовар добавлен в корзину!</h3>
+    <h2 class="visually-hidden">Добавление товара в корзину</h2>
+    <p>Tовар добавлен в корзину!</p>
     <ul class="add-to-cart">
       <li><a href="#">Оформить заказ</a></li>
       <li><a href="#">Продолжить покупки</a></li>
