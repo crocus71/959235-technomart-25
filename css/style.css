@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Cuprum', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  background-color: #ffffff;
+
+}
+.main-header {
+  background-color: #f3f7f9;
+
+
+}
+.main-header li {
+
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.main-header .logo {
+  position: absolute;
+  margin-left: 130px;
+}
+.site-menu {
+  display: flex;
+  flex-direction: row;
+
+ /* font-size: 16px;
+  line-height: 42px;
+  color: #bbc0c9;*/
+  background-color: #32425c;
+
+}
+
+.site-menu ul {
+  display: flex;
+  flex-direction: row;
+
+}
+.site-menu a,
+.header-navigation a {
+  color: #ffffff;
+
+}
+.site-menu a:hover,
+.site-menu a:focus {
+
+  color: #ffffff;
+}
+
+.site-menu a:active {
+
+  color: #8b8e94;
+}
+input[type=text] {
+  margin-left: 400px;
+
+}
+
+
+.header-navigation ul  {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  line-height: 56px;
+  background-color: #32425c;
+  justify-content: space-around;
+
+}
+.features .btn,
+.contacts .btn {
+  background-color: #ee3643;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+
+.btn:focus {
+  background-color: #ca2c37;
+}
+.btn:active {
+  background-color: #ba2732;
+}
+.login li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120px;
+  height: 45px;
+  background-color: #ffffff;
+  }
