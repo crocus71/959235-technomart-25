@@ -11,8 +11,7 @@
 <body>
   <header class="main-header">
     <div class="site-menu">
-      <a class="main-header logo" href="index.html">
-        <img src="img/logo-header.png" width="220" height="47" alt='Логотип "Техномарт"'>
+      <a class="main-header logo" href="index.html">Техномарт
       </a>
       <ul class="menu">
         <form action="https://echo.htmlacademy.ru" method="get">
@@ -65,7 +64,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="check-item" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="manufacturer">
           <legend>Производители</legend>
             <label>
               <input type="checkbox" name="bosch" id="bosch" value="BOSCH" checked>BOSCH
@@ -83,7 +82,7 @@
               <input type="checkbox" name="hitachi" id="hitachi" value="Hitachi">Hitachi
             </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="supply">
           <legend>Питание</legend>
             <label>
               <input type="radio" name="battery" id="battery" value="battery" checked>Аккумуляторные
@@ -99,6 +98,19 @@
 
     </section>
     <section class="catalog">
+      <div class="catalog-items">
+        <div class="catalog-item">
+          <div class="flag flag-new">новинка</div>
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
+          <div class="image"><img width="218" height="168" src="img/Perforator_bosch_bfg_3000.jpg"></div>
+          <div class="title">Перфоратор BOSCH BFG 3000</div>
+          <div class="discount">22 500 Р.</div>
+          <div class="price">15 500 Р.</div>
+        </div>
+      </div>
       <h2>ПЕРФОРАТОРЫ</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -198,7 +210,7 @@
    <footer class="main-footer">
     <nav class="footer-navigation">
       <a class="main-footer logo" href="index.html">
-        <img src="img/Logo-footer.png" width="221" height="71" alt='Логотип "Техномарт"'>
+        Техномарт
       </a>
 	  <p class="footer-address">
 			<span>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
